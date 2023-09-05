@@ -21,6 +21,11 @@ function restore() {
 
 function changed() {
 	document.getElementById("submit").value = "Save";
+	if(document.getElementById("enabled").checked){
+		document.getElementById("msg").innerHTML = "Removing the Brenton! 😎"
+	} else {
+		document.getElementById("msg").innerHTML = "The Brenton will stay"
+	}
 }
 
 function enter(e) {
